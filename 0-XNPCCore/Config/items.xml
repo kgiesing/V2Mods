@@ -554,7 +554,7 @@
 			<property name="SoundHolster" value="weapon_holster"/>
 			<property class="Action0">
 				<property name="Class" value="MeleeSDX, SCore"/>
-				<property name="Delay" value=".1" /> 
+				<property name="Delay" value=".8" /> 
 				<property name="Range" value="1.65" />
 				<property name="Sphere" value="1.2"/>
 				<property name="Sound_start" value="swoosh"/>
@@ -567,7 +567,7 @@
 			</property> 
 			<property class="Action1">
 				<property name="Class" value="MeleeSDX, SCore"/>
-				<property name="Delay" value=".1" /> 
+				<property name="Delay" value=".8" /> 
 				<property name="Range" value="1.65" />
 				<property name="Sphere" value="1.2"/>
 				<property name="Sound_start" value="swoosh"/>
@@ -1757,10 +1757,10 @@
 			<property name="Extends" value="gunNPCPistol" />
 			<property name="CompatibleWeapon" value="gunHandgunT1Pistol" />
 			<property name="RightHandJointName" value="Pistol" />
+			<property name="HoldingItemHidden" value="true"/>
 			<property name="Tags" value="weapon,ranged,shortRange,gun,pistol,reloadPenalty1,barrelAttachments,sideAttachments,smallTopAttachments,magazine,firingMode,attAgility,perkGunslinger" />
 			<property name="CreativeMode" value="None" />
 			<property name="TintColor" value="66, 33, 0" />
-			<property name="HoldingItemHidden" value="true"/>
 			<property name="SoundUnholster" value="weapon_unholster"/>
 			<property name="SoundHolster" value="weapon_holster"/>
 			<property class="Action0">

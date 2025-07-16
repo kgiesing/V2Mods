@@ -85,7 +85,6 @@
 			<AudioClip ClipName="#@modfolder:Resources/HarleySounds.unity3d?Bigape" />
 			<AudioClip ClipName="#@modfolder:Resources/HarleySounds.unity3d?Ominous" />
 			<AudioClip ClipName="#@modfolder:Resources/HarleySounds.unity3d?Wannaplay" />
-			<Channel name="Mouth"/>
 			<Priority name="3"/>
 			<maxVoicesPerEntity value="1"/>
 			<LowestPitch name="0.95"/>

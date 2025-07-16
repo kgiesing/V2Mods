@@ -498,7 +498,7 @@
 			<property name="HireCurrency" value="casinoCoin" />
 			<property name="HireCost" value="1000" />
 			<property name="RotateToGround" value="false"/>	
-			<property name="PushFactor" value="1"/>	
+			<!-- <property name="PushFactor" value="1"/>	-->
 
 			<effect_group name="Base Effects">
 				<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
@@ -2725,7 +2725,9 @@
 			<property name="SoundRandomTime" value="60"/>
 			<property name="SoundAlert" value="player2stamina"/>
 			<property name="SoundAttack" value="player2stamina"/>
-			<property name="SoundSense" value="player2stamina"/>	
+			<property name="SoundSense" value="player2stamina"/>
+			<!-- <property name="HandItem" value="gunNPCPistolHidden"/> -->
+			
 		</entity_class>				
 		
 		

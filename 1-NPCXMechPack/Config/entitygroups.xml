@@ -1,0 +1,67 @@
+<configs>
+
+	<insertAfter xpath="/entitygroups/entitygroup[last()]">
+		<entitygroup name="XMechEnemyGroupGS01">
+			npcMechDrone,.5
+			npcMechRustyDrone,.2
+			npcMechRobot,.3
+			none, 99.0
+		</entitygroup>
+		<entitygroup name="XMechEnemyGroupGS50">
+			npcMechDrone,.3
+			npcMechRustyDrone,.2
+			npcMechRobot,.4
+			npcMechSphereI,.3
+			npcMechSphereII,.3
+			npcMechRangedRobot,.3
+			npcMechBee,.2
+			none, 98.0
+		</entitygroup>
+		<entitygroup name="XMechEnemyGroupGS100">
+			npcMechDrone,.2
+			npcMechRustyDrone,.2
+			npcMechRobot,.2
+			npcMechSphereI,.2
+			npcMechSphereII,.2
+			npcMechGunBot,.8
+			npcMechRangedRobot,.7
+			npcMechBee,.5
+			none, 97.0
+		</entitygroup>
+		<entitygroup name="XMechCompanion">
+			npcMechCompanion,1.0
+			none, 99.0
+		</entitygroup>
+	</insertAfter>	
+
+	<csv xpath="/entitygroups/entitygroup[ starts-with(@name, 'npcMech')]/text()" delim="\n" op="add">
+		npcMechDrone,.03
+		npcMechRustyDrone,.02
+		npcMechRobot,.03
+		npcMechSphereI,.02
+		npcMechSphereII,.02
+		npcMechGunBot,.03
+		npcMechCompanion,.05
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[ starts-with(@name, 'npcEnemyAll')]/text()" delim="\n" op="add">
+		npcMechDrone,.3
+		npcMechRustyDrone,.2
+		npcMechRobot,.3
+		npcMechSphereI,.2
+		npcMechSphereII,.2
+		npcMechGunBot,.15
+		npcMechRangedRobot,.15
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[ starts-with(@name, 'npcEnemyMelee')]/text()" delim="\n" op="add">
+		npcMechDrone,.3
+		npcMechRustyDrone,.2
+		npcMechRobot,.3
+		npcMechSphereI,.2
+		npcMechSphereII,.2
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[ starts-with(@name, 'npcEnemyRanged')]/text()" delim="\n" op="add">
+		npcMechRangedRobot,.3
+		npcMechGunBot,.3
+	</csv>
+
+</configs>

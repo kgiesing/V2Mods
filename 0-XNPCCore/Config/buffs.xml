@@ -528,14 +528,12 @@
 			<update_rate value="1"/>
 			<effect_group name="HideLauncher"> 
 				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" parent_transform="Hips" transform_path="RocketL">   	
-					<requirement name="CVarCompare" cvar="_notAlerted" operation="Equals" value="1"/> 
-				<!--	<requirement name="CVarCompare" cvar="IsAlert" operation="Equals" value="0"/> -->
+					<requirement name="HasBuff" buff="RandomIdle"/>
 				</triggered_effect> 
 			</effect_group>	
 			<effect_group name="ShowLauncher"> 
 				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="true" parent_transform="Hips" transform_path="RocketL">   	
-					<requirement name="CVarCompare" cvar="_notAlerted" operation="Equals" value="0"/> 
-				<!--	<requirement name="CVarCompare" cvar="IsAlert" operation="Equals" value="1"/> -->
+					<requirement name="!HasBuff" buff="RandomIdle"/>
 				</triggered_effect> 
 			</effect_group>
 		</buff>
