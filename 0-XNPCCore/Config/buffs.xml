@@ -302,7 +302,7 @@
             <stack_type value="ignore"/>
             <duration value="3"/>
             <update_rate value="1"/>
-             <effect_group>
+   <!--          <effect_group>
                 <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar"  cvar="healAbrasionMult" operation="set" value="3"/> 
                 <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar"  cvar="medicalRegHealthAmount" operation="add" value="30"/> 
                 <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar"  cvar="medRegHealthIncSpeed" operation="set" value="2">
@@ -327,7 +327,7 @@
                 <triggered_effect trigger="onSelfBuffStart" action="AddBuff"  buff="buffInjuryAbrasionTreated">
                     <requirement name="HasBuff" buff="buffInjuryAbrasion"/>
                 </triggered_effect>
-            </effect_group>
+            </effect_group> -->
             <effect_group name="IsHealing">
                 <triggered_effect trigger="onSelfBuffStart" action="AnimatorFireTrigger" property="Heal" />
 				<requirement name="CVarCompare" cvar="_stunned" operation="Equals" value="0"/> 	
