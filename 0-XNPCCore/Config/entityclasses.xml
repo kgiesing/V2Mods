@@ -2028,7 +2028,7 @@
 		
 		<entity_class name="animalTemplateTimidFlying" >
 			<property name="UserSpawnType" value="None"/>
-			<!--<property name="Class" value="EntityFlying"/>-->
+			<property name="EntityFlags" value="animal,edible"/>
 			<property name="Class" value="EntityZombieFlyingSDX, SCore"/>
 			<property name="LookAtAngle" value="0"/> <!-- A19 , add if you dont want animals to head track  -->			
 			<property name="Mesh" value="#@modfolder:Resources/XythAnimals.unity3d?Robin_X" />
@@ -2081,6 +2081,7 @@
 		
 		<entity_class name="animalTemplateHostileFlying" extends="animalZombieVulture">
 			<property name="UserSpawnType" value="None"/>
+			<property name="EntityFlags" value="animal,edible"/>
 			<property name="Class" value="EntityVulture"/>
 			<property name="Mesh" value="#@modfolder:Resources/XythAnimals.unity3d?Robin_X" />
 			<property name="Tags" value="entity,animal,hostile,template"/>
@@ -2253,6 +2254,7 @@
 		
 		<entity_class name="zombieAnimalTemplate" >
 			<property name="UserSpawnType" value="None"/>
+			<property name="EntityFlags" value="zombie,animal"/>
 			<property name="Tags" value="entity,animal,hostile,template"/>
 			<property name="Mesh" value="#@modfolder:Resources/guppyZombieAnimals.unity3d?guppyCreepyCrawly"/>
 			<property name="ModelType" value="Standard"/>
@@ -2345,6 +2347,7 @@
 		<entity_class name="npcMechMeleeTemplate" extends="npcMeleeTemplate" >
 			<property name="Class" value="EntityNPCBandit, SCore" /> 
 			<property name="Mesh" value="#@modfolder:Resources/XythMechs.unity3d?Drone_X"/>
+			<property name="EntityFlags" value="bandit"/>
 			<property name="UserSpawnType" value="None"/>
 			<property name="EntityType" value="Player"/>
 			<property name="ModelType" value="Standard"/>
