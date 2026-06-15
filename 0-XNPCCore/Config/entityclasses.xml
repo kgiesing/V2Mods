@@ -469,12 +469,12 @@
 			<property name="HandItem" value="meleeNPCEmptyHand"/> 
 			
 			<property name="MaxTurnSpeed" value="300"/>
-			<property name="MoveSpeed" value="0.3"/> 
+			<property name="MoveSpeed" value="0.5"/> 
 			<property name="MoveSpeedAggro" value="1.0, 1.0"/> 
 			<property name="MoveSpeedPanic" value="1.0"/>
 			<property name="MoveSpeedRand" value="-.2, .2"/> 
 			<effect_group>
-				<passive_effect name="WalkSpeed" operation="base_set" value=".3"/> <!-- old .5  -->
+				<passive_effect name="WalkSpeed" operation="base_set" value=".5"/> <!-- old .5  -->
 				<passive_effect name="RunSpeed" operation="base_set" value="1.0"/> <!-- old 1.2  -->
 				<passive_effect name="HealthChangeOT" operation="base_set" value="0.05"/>  
 				<passive_effect name="DamageModifier" operation="perc_set" value="1"/>
@@ -555,58 +555,58 @@
 			<effect_group name="EntityDamageKillsLevel1">
 			  <requirement name="CVarCompare" cvar="$varNumKills" operation="GT" value="0"/>
 			  <requirement name="CVarCompare" cvar="$varNumKills" operation="LTE" value="20"/>
-				<passive_effect name="DamageModifier" operation="perc_add" value="0.1"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="1"/>
 			</effect_group> 
 			<effect_group name="EntityDamageKillsLevel2">
 			  <requirement name="CVarCompare" cvar="$varNumKills" operation="GT" value="20"/>
 			  <requirement name="CVarCompare" cvar="$varNumKills" operation="LTE" value="50"/>
-				<passive_effect name="DamageModifier" operation="perc_add" value="0.2"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="1.5"/>
 			</effect_group> 
 			<effect_group name="EntityDamageKillsLevel3">
 			  <requirement name="CVarCompare" cvar="$varNumKills" operation="GT" value="50"/>
 			  <requirement name="CVarCompare" cvar="$varNumKills" operation="LTE" value="100"/>
-				<passive_effect name="DamageModifier" operation="perc_add" value="0.3"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="2"/>
 			</effect_group> 
 			<effect_group name="EntityDamageKillsLevel4">
 			  <requirement name="CVarCompare" cvar="$varNumKills" operation="GT" value="100"/>
 			  <requirement name="CVarCompare" cvar="$varNumKills" operation="LTE" value="200"/>
-				<passive_effect name="DamageModifier" operation="perc_add" value="0.4"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="2.5"/>
 			</effect_group> 
 			<effect_group name="EntityDamageKillsLevel5">
 			  <requirement name="CVarCompare" cvar="$varNumKills" operation="GT" value="200"/>
-				<passive_effect name="DamageModifier" operation="perc_add" value="0.5"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="3"/>
 			</effect_group> 
 			<!-- DAMAGE MODIFIER BASED ON TIME OF DAY -->
 			<effect_group name="EntityDamageAtNight">
 				<requirement name="CVarCompare" cvar="$varFactionBandit" operation="Equals" value="1"/>
 				<requirement name="IsNight"/>
-					<passive_effect name="DamageModifier" operation="perc_add" value="-.2"/>
+					<passive_effect name="DamageModifier" operation="perc_add" value="-.25"/>
 			</effect_group>                     
 			<!-- DAMAGE MODIFIER BASED ON BIOME DIFFICULTY -->
 			<effect_group name="EntityDamageInBiomeForest">
 				<requirement name="CVarCompare" cvar="$varFactionBandit" operation="Equals" value="1"/>
 				<requirement name="InBiome" biome="3"/>
-					<passive_effect name="DamageModifier" operation="perc_add" value="-.3"/>
+					<passive_effect name="DamageModifier" operation="perc_add" value="-.5"/>
 			</effect_group> 
 			<effect_group name="EntityDamageInBiomeDesert">
 				<requirement name="CVarCompare" cvar="$varFactionBandit" operation="Equals" value="1"/>
 				<requirement name="InBiome" biome="5"/>
-					<passive_effect name="DamageModifier" operation="perc_add" value="-.1"/>
+					<passive_effect name="DamageModifier" operation="perc_add" value="-.2"/>
 			</effect_group> 
 			<effect_group name="EntityDamageInBiomeSnow">
 				<requirement name="CVarCompare" cvar="$varFactionBandit" operation="Equals" value="1"/>
 				<requirement name="InBiome" biome="1"/>
-					<passive_effect name="DamageModifier" operation="perc_add" value="-.25"/>
+					<passive_effect name="DamageModifier" operation="perc_add" value="-.1"/>
 			</effect_group> 
 			<effect_group name="EntityDamageInBiomeBurntForest">
 				<requirement name="CVarCompare" cvar="$varFactionBandit" operation="Equals" value="1"/>
 				<requirement name="InBiome" biome="9"/>
-					<passive_effect name="DamageModifier" operation="perc_add" value="-.5"/>
+					<passive_effect name="DamageModifier" operation="perc_add" value="-.2"/>
 			</effect_group> 
 			<effect_group name="EntityDamageInBiomeWasteland">
 				<requirement name="CVarCompare" cvar="$varFactionBandit" operation="Equals" value="1"/>
 				<requirement name="InBiome" biome="8"/>
-					<passive_effect name="DamageModifier" operation="perc_add" value="-.5"/>
+					<passive_effect name="DamageModifier" operation="perc_add" value="-.1"/>
 			</effect_group> 
 			 
 			
@@ -641,7 +641,7 @@
 			<effect_group name="ReduceDamageToPlayers">
 				<requirement name="EntityTagCompare" target="other" tags="player"/>
 				<requirement name="HoldingItemHasTags" tags="ranged,melee"/>
-				<passive_effect name="DamageModifier" operation="perc_add" value="-.2"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-1.0"/>
 			</effect_group>
 			
 			<!-- Add Damage Resistance -->
@@ -682,7 +682,7 @@
 				DestroyArea|
 				Territorial|
 				ApproachDistraction|
-				RunawayWhenHurt runChance=0.1;healthPer=0.2;healthPerMax=0.5|
+				RunawayWhenHurt runChance=0.2;healthPer=0.2;healthPerMax=0.5|
 				ApproachAndAttackTarget class=EntityPlayer,0,EntityZombie,0,EntityEnemyAnimal,0,EntityNPC,0|
 				ApproachSpot|
 				Look|
@@ -3780,7 +3780,7 @@
 			<!--	<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="Timid"/>		-->
 			</effect_group>	
 			<!-- <property name="AltMats" value="@:Entities/Zombies/Zombies/Materials/HD_Arlene2.mat,@:Entities/Zombies/Zombies/Materials/HD_Arlene3.mat"/> -->
-			
+			<property name="personality" value="trader_gruff"/>
 		</entity_class>	
 
 		<entity_class name="npcBakerClub" extends="npcAdvancedClubTemplate"> 
@@ -3990,7 +3990,17 @@
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?Baker_X"/> 
 			<property name="PickUpItem" value="bakerPickUpNPC" />
 		</entity_class> 
-
+		
+		<entity_class name="npcJenKnife" extends="npcAdvancedKnifeTemplate"> 
+			<property name="UserSpawnType" value="Menu"/> 
+ 			<property name="Tags" value="entity,female,npc,walker,melee,DRMid,Knife,Machete,ClubWood,BatWood,Axe,Spear,SMG,PipePistol,PipeShotgun,PipeRifle,PipeMG,M60,Pistol,DPistol,Ak47,TRifle,HRifle,SRifle,LBow,XBow,PShotgun,AShotgun,RocketL"/>
+			<property name="Faction" value="whiteriver"/>
+			<property name="Names" value="Jen" />				
+			<property name="Mesh" value="#@modfolder:Resources/Jen.unity3d?TraderJen3_X"/> 
+			<property name="PickUpItem" value="bakerPickUpNPC" />
+			<property name="CrouchType" value="0"/> 
+			<property name="LookAtAngle" value="0"/> 
+		</entity_class>	
 	
 		<!-- Loot drop containers  -->
 		
