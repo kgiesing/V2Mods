@@ -2392,12 +2392,16 @@
 			<property name="ChestExplosionDamageMultiplier" value="2"/>
 			<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 			<property name="HandItem" value="meleeHandZombieCop"/>
-			<property name="Explosion.ParticleIndex" value="8"/>
-			<property name="Explosion.RadiusBlocks" value="5"/>
-			<property name="Explosion.RadiusEntities" value="6"/>
-			<property name="Explosion.BlockDamage" value="500"/>
-			<property name="Explosion.EntityDamage" value="150"/>
-			<property name="Explosion.DamageBonus.earth" value="0"/>
+			<property class="Explosion">
+				<property name="ParticleIndex" value="8"/>
+				<property name="RadiusBlocks" value="5"/>
+				<property name="RadiusEntities" value="6"/>
+				<property name="BlockDamage" value="500"/>
+				<property name="EntityDamage" value="150"/>
+				<property class="DamageBonus">
+					<property name="earth" value="0"/>
+				</property>
+			</property>
 			<property name="JumpMaxDistance" value="0, 0"/>
 			<property name="ExperienceGain" value="750"/>
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>

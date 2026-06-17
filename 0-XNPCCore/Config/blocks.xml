@@ -46,7 +46,7 @@
       <property name="Texture" value="2"/>
       <property name="ImposterExclude" value="true"/>
       <property name="LPHardnessScale" value="2"/>
-      <property name="Map.Color" value="20,50,21"/>
+      <property name="MapColor" value="20,50,21"/>
       <property class="RepairItems">
         <property name="animalPoop" value="1"/>
       </property>
