@@ -1,101 +1,67 @@
 <configs>
 	
-	<csv xpath="/entitygroups/entitygroup[@name='ZombiesAll']/text()" delim="\n" op="add" >
-		zombieFemaleTutorialT1, 0.0125
-		zombieFemaleTutorialT2, 0.0125
-		zombieFemaleTutorialT3, 0.0125
-		zombieFemaleTutorialT21, 0.0125
-		zombieFemaleTutorialT5, 0.0125
-		zombieFemaleTutorialT6, 0.0125
-		zombieFemaleTutorialT7, 0.0125
-		zombieFemaleTutorialT22, 0.0125		
-	</csv>
-	
-	<csv xpath="/entitygroups/entitygroup[@name='ZombiesNight']/text()" delim="\n" op="add" >
-		zombieFemaleTutorialT1, 0.0125
-		zombieFemaleTutorialT2, 0.0125
-		zombieFemaleTutorialT3, 0.0125
-		zombieFemaleTutorialT21, 0.0125
-		zombieFemaleTutorialT5, 0.0125
-		zombieFemaleTutorialT6, 0.0125
-		zombieFemaleTutorialT7, 0.0125
-		zombieFemaleTutorialT22, 0.0125
-	</csv>
-	
-	<csv xpath="/entitygroups/entitygroup[@name='ZombiesForestDowntown']/text()" delim="\n" op="add" >
-		zombieFemaleTutorialT1, 0.0125
-		zombieFemaleTutorialT2, 0.0125
-		zombieFemaleTutorialT3, 0.0125
-		zombieFemaleTutorialT21, 0.0125
-		zombieFemaleTutorialT5, 0.0125
-		zombieFemaleTutorialT6, 0.0125
-		zombieFemaleTutorialT7, 0.0125
-		zombieFemaleTutorialT22, 0.0125		
-	</csv>
-	
-	<csv xpath="/entitygroups/entitygroup[@name='ZombiesForestDowntownNight']/text()" delim="\n" op="add" >
-		zombieFemaleTutorialT1, 0.0125
-		zombieFemaleTutorialT2, 0.0125
-		zombieFemaleTutorialT3, 0.0125
-		zombieFemaleTutorialT21, 0.0125
-		zombieFemaleTutorialT5, 0.0125
-		zombieFemaleTutorialT6, 0.0125
-		zombieFemaleTutorialT7, 0.0125
-		zombieFemaleTutorialT22, 0.0125
-	</csv>
-	
-	<csv xpath="/entitygroups/entitygroup[@name='ZombiesDowntown']/text()" delim="\n" op="add" >
-		zombieFemaleTutorialT1, 0.0125
-		zombieFemaleTutorialT2, 0.0125
-		zombieFemaleTutorialT3, 0.0125
-		zombieFemaleTutorialT21, 0.0125
-		zombieFemaleTutorialT5, 0.0125
-		zombieFemaleTutorialT6, 0.0125
-		zombieFemaleTutorialT7, 0.0125
-		zombieFemaleTutorialT22, 0.0125
-	</csv>
-	
-	<csv xpath="/entitygroups/entitygroup[@name='ZombiesWasteland']/text()" delim="\n" op="add" >
-		zombieFemaleTutorialT1, 0.0125
-		zombieFemaleTutorialT2, 0.0125
-		zombieFemaleTutorialT3, 0.0125
-		zombieFemaleTutorialT21, 0.0125
-		zombieFemaleTutorialT5, 0.0125
-		zombieFemaleTutorialT6, 0.0125
-		zombieFemaleTutorialT7, 0.0125
-		zombieFemaleTutorialT22, 0.0125
-	</csv>
+	<append xpath="/entitygroups/entitygroup[@name='ZombiesAll']">
+		<e n="zombieFemaleTutorialT1" p="0.0125"/><e n="zombieFemaleTutorialT2" p="0.0125"/>
+		<e n="zombieFemaleTutorialT3" p="0.0125"/><e n="zombieFemaleTutorialT21" p="0.0125"/>
+		<e n="zombieFemaleTutorialT5" p="0.0125"/><e n="zombieFemaleTutorialT6" p="0.0125"/>
+		<e n="zombieFemaleTutorialT7" p="0.0125"/><e n="zombieFemaleTutorialT22" p="0.0125"/>
+	</append>
 
-	<csv xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight']/text()" delim="\n" op="add" >
-		zombieFemaleTutorialT1, 0.0125
-		zombieFemaleTutorialT2, 0.0125
-		zombieFemaleTutorialT3, 0.0125
-		zombieFemaleTutorialT21, 0.0125
-		zombieFemaleTutorialT5, 0.0125
-		zombieFemaleTutorialT6, 0.0125
-		zombieFemaleTutorialT7, 0.0125
-		zombieFemaleTutorialT22, 0.0125
-	</csv>
-	<csv xpath="/entitygroups/entitygroup[@name='ZombiesWastelandDowntown']/text()" delim="\n" op="add" >
-		zombieFemaleTutorialT1, 0.0125
-		zombieFemaleTutorialT2, 0.0125
-		zombieFemaleTutorialT3, 0.0125
-		zombieFemaleTutorialT21, 0.0125
-		zombieFemaleTutorialT5, 0.0125
-		zombieFemaleTutorialT6, 0.0125
-		zombieFemaleTutorialT7, 0.0125
-		zombieFemaleTutorialT22, 0.0125
-	</csv>
-	<csv xpath="/entitygroups/entitygroup[starts-with(@name, 'wanderingHorde')]/text()" delim="\n" op="add">
-		zombieFemaleTutorialT1, 0.125
-		zombieFemaleTutorialT2, 0.125
-		zombieFemaleTutorialT3, 0.125
-		zombieFemaleTutorialT21, 0.125
-		zombieFemaleTutorialT5, 0.125
-		zombieFemaleTutorialT6, 0.125
-		zombieFemaleTutorialT7, 0.125
-		zombieFemaleTutorialT22, 0.125		
-	</csv>
+	<append xpath="/entitygroups/entitygroup[@name='ZombiesNight']">
+		<e n="zombieFemaleTutorialT1" p="0.0125"/><e n="zombieFemaleTutorialT2" p="0.0125"/>
+		<e n="zombieFemaleTutorialT3" p="0.0125"/><e n="zombieFemaleTutorialT21" p="0.0125"/>
+		<e n="zombieFemaleTutorialT5" p="0.0125"/><e n="zombieFemaleTutorialT6" p="0.0125"/>
+		<e n="zombieFemaleTutorialT7" p="0.0125"/><e n="zombieFemaleTutorialT22" p="0.0125"/>
+	</append>
+
+	<append xpath="/entitygroups/entitygroup[@name='ZombiesForestDowntown']">
+		<e n="zombieFemaleTutorialT1" p="0.0125"/><e n="zombieFemaleTutorialT2" p="0.0125"/>
+		<e n="zombieFemaleTutorialT3" p="0.0125"/><e n="zombieFemaleTutorialT21" p="0.0125"/>
+		<e n="zombieFemaleTutorialT5" p="0.0125"/><e n="zombieFemaleTutorialT6" p="0.0125"/>
+		<e n="zombieFemaleTutorialT7" p="0.0125"/><e n="zombieFemaleTutorialT22" p="0.0125"/>
+	</append>
+
+	<append xpath="/entitygroups/entitygroup[@name='ZombiesForestDowntownNight']">
+		<e n="zombieFemaleTutorialT1" p="0.0125"/><e n="zombieFemaleTutorialT2" p="0.0125"/>
+		<e n="zombieFemaleTutorialT3" p="0.0125"/><e n="zombieFemaleTutorialT21" p="0.0125"/>
+		<e n="zombieFemaleTutorialT5" p="0.0125"/><e n="zombieFemaleTutorialT6" p="0.0125"/>
+		<e n="zombieFemaleTutorialT7" p="0.0125"/><e n="zombieFemaleTutorialT22" p="0.0125"/>
+	</append>
+
+	<append xpath="/entitygroups/entitygroup[@name='ZombiesDowntown']">
+		<e n="zombieFemaleTutorialT1" p="0.0125"/><e n="zombieFemaleTutorialT2" p="0.0125"/>
+		<e n="zombieFemaleTutorialT3" p="0.0125"/><e n="zombieFemaleTutorialT21" p="0.0125"/>
+		<e n="zombieFemaleTutorialT5" p="0.0125"/><e n="zombieFemaleTutorialT6" p="0.0125"/>
+		<e n="zombieFemaleTutorialT7" p="0.0125"/><e n="zombieFemaleTutorialT22" p="0.0125"/>
+	</append>
+
+	<append xpath="/entitygroups/entitygroup[@name='ZombiesWasteland']">
+		<e n="zombieFemaleTutorialT1" p="0.0125"/><e n="zombieFemaleTutorialT2" p="0.0125"/>
+		<e n="zombieFemaleTutorialT3" p="0.0125"/><e n="zombieFemaleTutorialT21" p="0.0125"/>
+		<e n="zombieFemaleTutorialT5" p="0.0125"/><e n="zombieFemaleTutorialT6" p="0.0125"/>
+		<e n="zombieFemaleTutorialT7" p="0.0125"/><e n="zombieFemaleTutorialT22" p="0.0125"/>
+	</append>
+
+	<append xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight']">
+		<e n="zombieFemaleTutorialT1" p="0.0125"/><e n="zombieFemaleTutorialT2" p="0.0125"/>
+		<e n="zombieFemaleTutorialT3" p="0.0125"/><e n="zombieFemaleTutorialT21" p="0.0125"/>
+		<e n="zombieFemaleTutorialT5" p="0.0125"/><e n="zombieFemaleTutorialT6" p="0.0125"/>
+		<e n="zombieFemaleTutorialT7" p="0.0125"/><e n="zombieFemaleTutorialT22" p="0.0125"/>
+	</append>
+
+	<append xpath="/entitygroups/entitygroup[@name='ZombiesWastelandDowntown']">
+		<e n="zombieFemaleTutorialT1" p="0.0125"/><e n="zombieFemaleTutorialT2" p="0.0125"/>
+		<e n="zombieFemaleTutorialT3" p="0.0125"/><e n="zombieFemaleTutorialT21" p="0.0125"/>
+		<e n="zombieFemaleTutorialT5" p="0.0125"/><e n="zombieFemaleTutorialT6" p="0.0125"/>
+		<e n="zombieFemaleTutorialT7" p="0.0125"/><e n="zombieFemaleTutorialT22" p="0.0125"/>
+	</append>
+
+	<append xpath="/entitygroups/entitygroup[starts-with(@name, 'wanderingHorde') or starts-with(@name, 'FwanderingHorde')]">
+		<e n="zombieFemaleTutorialT1" p="0.125"/><e n="zombieFemaleTutorialT2" p="0.125"/>
+		<e n="zombieFemaleTutorialT3" p="0.125"/><e n="zombieFemaleTutorialT21" p="0.125"/>
+		<e n="zombieFemaleTutorialT5" p="0.125"/><e n="zombieFemaleTutorialT6" p="0.125"/>
+		<e n="zombieFemaleTutorialT7" p="0.125"/><e n="zombieFemaleTutorialT22" p="0.125"/>
+	</append>
 
 	<!--
         Sleeper Volume Entity Groups
