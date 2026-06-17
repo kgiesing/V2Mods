@@ -2623,11 +2623,14 @@
 				<property name="Infinite_ammo" value="true" />
 				<property name="Single_magazine_usage" value="false"/>
 				<property name="Bullet_icon" value="uzi" />
-				<property name="Sound_start" value="crossbow_fire"/>
+				<property name="Sound_start" value="bow2_fire"/>
 				<property name="Sound_repeat" value=""/>
 				<property name="Sound_end" value=""/>
 				<property name="Sound_empty" value="dryfire"/>
-				<property name="Sound_reload" value="crossbow_reload"/>
+				<property name="Sound_reload" value="bow_unquiver"/>
+				<property name="Sound_draw" value="bow2_draw"/>
+				<property name="Sound_cancel" value="bow_fire_cancel"/>	
+				<property name="SoundDestroy" value="wooddestroy1"/>
 				<property name="DamageEntity" value="10"/> 
 				<property name="DamageBlock" value="10"/> 				
 			</property>
@@ -3207,15 +3210,19 @@
 			<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
 			<property class="Action1">
 				<property name="Class" value="Projectile"/>
-				<property name="Explosion.ParticleIndex" value="5"/> <!-- which Prefab/particle is used -->
-				<property name="Explosion.RadiusBlocks" value="5"/> <!-- damage radius for blocks -->
-				<property name="Explosion.RadiusEntities" value="4"/> <!-- damage radius for entities -->
-				<property name="Explosion.DamageBonus.water" value="0"/>
+				<property class="Explosion">
+					<property name="ParticleIndex" value="5"/> <!-- which Prefab/particle is used -->
+					<property name="RadiusBlocks" value="5"/> <!-- damage radius for blocks -->
+					<property name="RadiusEntities" value="4"/> <!-- damage radius for entities -->
+					<property class="DamageBonus">
+						<property name="water" value="0"/>
+					</property>
+					<property name="BlockDamage" value="2500"/>  <!-- workaround, not affected by perks at all -->
+					<property name="EntityDamage" value="442"/>  <!-- workaround, not affected by perks at all -->
+				</property>
 				<property name="Gravity" value="-6"/>
 				<property name="FlyTime" value=".2"/>
 				<property name="LifeTime" value="20"/>
-				<property name="Explosion.BlockDamage" value="2500"/>  <!-- workaround, not affected by perks at all -->
-				<property name="Explosion.EntityDamage" value="442"/>  <!-- workaround, not affected by perks at all -->
 			</property>
 			<effect_group name="ammoRocketHE" tiered="false">
 				<passive_effect name="ProjectileVelocity" operation="base_set" value="50" /> <!-- not working?  -->
@@ -3244,7 +3251,9 @@
 			<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
 			<property class="Action1">
 				<property name="Class" value="Projectile"/>
-				<property name="Explosion.ParticleIndex" value="0"/> <!-- no expl. -->
+				<property class="Explosion">
+					<property name="ParticleIndex" value="0"/> <!-- no expl. -->
+				</property>
 				<property name="Gravity" value="-2.5"/>
 				<property name="FlyTime" value="0"/>
 				<property name="LifeTime" value="14"/>
