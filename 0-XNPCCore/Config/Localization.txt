@@ -1,4 +1,5 @@
 Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,spanish,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese
+<include filename="Dialogs/GenericNPC.txt"/>
 MechFactionSchematic,items,Item,,,Master of disguse,,,,Maitre de l'écoeurement,,変装の名人,,,,,,,
 VaultDwellersFactionSchematic,items,Item,,,Master of disguse,,,,Maitre de l'écoeurement,,変装の名人,,,,,,,
 RedteamFactionSchematic,items,Item,,,Master of disguse,,,,Maitre de l'écoeurement,,変装の名人,,,,,,,
