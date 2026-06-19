@@ -3309,10 +3309,9 @@
 			<property name="AlwaysJiggle" value="true" />
 		</entity_class>
 		
-		<entity_class name="npcHarleyKnife" extends="npcBanditKnifeTemplate">
+		<entity_class name="npcHarleyKnife" extends="npcAdvancedKnifeTemplate">
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="personality" value="harley"/>
-			<property name="AIPackages" value="NPCModCore, NPCModNPCMeleeAdvanced, NPCModNPCRangedAdvanced, NPCModNPCHired"/>
  			<property name="Tags" value="entity,female,npc,walker,melee,voiceharley,bandit,DRLow,Knife,Machete,ClubWood,BatWood,Axe,Spear,SMG,PipePistol,PipeShotgun,PipeRifle,PipeMG,M60,Pistol,DPistol,Ak47,TRifle,HRifle,SRifle,LBow,XBow,PShotgun,AShotgun,RocketL"/>
 			<property name="Faction" value="whiteriver"/>
 			<property name="Names" value="Harley, Quinn, HarleyQuinn" />
