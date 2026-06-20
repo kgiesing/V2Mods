@@ -1,0 +1,9 @@
+Key,english,japanese
+Iseeyou,"I see you",
+Wannaplay,"Wanna play?",
+Teehee,"Tee-hee!",
+Woopee,"Whoopee!",
+Ididit,"I did it!",
+Onemore,"One more time!",
+Nutzo,"Thats Nutzo!",
+Ominous,"ominous ominus ipso facto",
