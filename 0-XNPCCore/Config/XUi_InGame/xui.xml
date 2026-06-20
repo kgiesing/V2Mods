@@ -1,0 +1,24 @@
+<configs>
+  <!-- 3.0: register the in-game NPC popups as window_groups. In 3.0 the in-game xui
+       has NO <ruleset> element - window groups are direct children of <xui>. The old
+       Config/XUi/ form appended to /xui/ruleset[@name='default'], which does not exist
+       in the in-game tree, so windowManager.Open("HireInformation") failed with
+       'Window "HireInformation" unknown!'. Appending to /xui from XUi_InGame fixes it. -->
+  <append xpath="/xui">
+    <window_group name="HireInformation">
+      <window name="windowHireInformationPopup" anchor="CenterTop"/>
+    </window_group>
+
+    <window_group name="JoinInformation">
+      <window name="windowJoinInformationPopup" anchor="CenterTop"/>
+    </window_group>
+
+    <window_group name="EntityInformation">
+      <window name="windowEntityInformationPanel" anchor="CenterTop"/>
+    </window_group>
+
+    <window_group name="SetCode">
+      <window name="windowPathFindingKeypad"/>
+    </window_group>
+  </append>
+</configs>
