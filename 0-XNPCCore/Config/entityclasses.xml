@@ -361,7 +361,7 @@
 			
 			<property name="ExperienceGain" value="400"/> <!-- XP grunt -->
 			<property name="LootDropProb" value="0.04"/> <!-- Whether it drops a loot bag on death or not. -->
-			<!-- <property name="LootListOnDeath" value="45"/> -->
+			<!-- <property name="LootList" value="45"/> -->
 			<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
 
 			<!-- <property name="CorpseBlock" value="air"/><property name="CorpseBlockChance" value="0"/> -->
@@ -4166,7 +4166,7 @@
 			<property name="Parent" value="Backpack"/>
 			<property name="IsEnemyEntity" value="false"/>
 			<property name="TimeStayAfterDeath" value="1200"/>
-			<property name="LootListOnDeath" value="zPackReg"/> <!-- used to determine container X/Y size -->
+			<property name="LootList" value="zPackReg"/> <!-- used to determine container X/Y size -->
 			<property name="Faction" value="none"/>
 		</entity_class>
 		
@@ -4179,7 +4179,7 @@
 			<property name="Parent" value="Backpack"/>
 			<property name="TimeStayAfterDeath" value="3600"/>
 			<property name="IsEnemyEntity" value="false"/>
-			<property name="LootListOnDeath" value="playerBackpack"/>
+			<property name="LootList" value="playerBackpack"/>
 			<property name="Faction" value="none"/>
 			<property name="NavObject" value="backpack" />
 		</entity_class>
@@ -4187,39 +4187,39 @@
 		<!-- Custom loot drop containers by weapon -->
 		<entity_class name="EntityNPCLootContainer" extends="EntityLootContainerNPC">
 			<property name="HideInSpawnMenu" value="true" />
-			<property name="LootListOnDeath" value="cntNPCEmptyHand" />
+			<property name="LootList" value="cntNPCEmptyHand" />
 		</entity_class>
 		<entity_class name="EntityNPCLootContainerClub" extends="EntityLootContainerNPC">
 			<property name="HideInSpawnMenu" value="true" />
-			<property name="LootListOnDeath" value="cntNPCClub" />
+			<property name="LootList" value="cntNPCClub" />
 		</entity_class>
 		<entity_class name="EntityNPCLootContainerKnife" extends="EntityLootContainerNPC">
 			<property name="HideInSpawnMenu" value="true" />
-			<property name="LootListOnDeath" value="cntNPCKnife" />
+			<property name="LootList" value="cntNPCKnife" />
 		</entity_class>
 		<entity_class name="EntityNPCLootContainerBat" extends="EntityLootContainerNPC">
 			<property name="HideInSpawnMenu" value="true" />
-			<property name="LootListOnDeath" value="cntNPCBat" />
+			<property name="LootList" value="cntNPCBat" />
 		</entity_class>
 		<entity_class name="EntityNPCLootContainerAxe" extends="EntityLootContainerNPC">
 			<property name="HideInSpawnMenu" value="true" />
-			<property name="LootListOnDeath" value="cntNPCAxe" />
+			<property name="LootList" value="cntNPCAxe" />
 		</entity_class>
 		<entity_class name="EntityNPCLootContainerSpear" extends="EntityLootContainerNPC">
 			<property name="HideInSpawnMenu" value="true" />
-			<property name="LootListOnDeath" value="cntNPCSpear" />
+			<property name="LootList" value="cntNPCSpear" />
 		</entity_class>
 		<entity_class name="EntityNPCLootContainerMachete" extends="EntityLootContainerNPC">
 			<property name="HideInSpawnMenu" value="true" />
-			<property name="LootListOnDeath" value="cntNPCMachete" />
+			<property name="LootList" value="cntNPCMachete" />
 		</entity_class>
 		<entity_class name="EntityNPCLootContainerPipePistol" extends="EntityLootContainerNPC">
 			<property name="HideInSpawnMenu" value="true" />
-			<property name="LootListOnDeath" value="cntNPCPipePistol" />
+			<property name="LootList" value="cntNPCPipePistol" />
 		</entity_class>
 		<entity_class name="EntityNPCLootContainerPistol" extends="EntityLootContainerNPC">
 			<property name="HideInSpawnMenu" value="true" />
-			<property name="LootListOnDeath" value="cntNPCPistol" />
+			<property name="LootList" value="cntNPCPistol" />
 		</entity_class>
 		<!--
 			This is the loot container used by Mechs with "hidden pistols" (built-in weapons).
@@ -4228,71 +4228,71 @@
 		-->
 		<entity_class name="EntityNPCLootContainerPistolHidden" extends="EntityLootContainerNPC">
 			<property name="HideInSpawnMenu" value="true" />
-			<property name="LootListOnDeath" value="cntNPCPistolHidden" />
+			<property name="LootList" value="cntNPCPistolHidden" />
 		</entity_class>
 		<entity_class name="EntityNPCLootContainerDPistol" extends="EntityLootContainerNPC">
 			<property name="HideInSpawnMenu" value="true" />
-			<property name="LootListOnDeath" value="cntNPCDPistol" />
+			<property name="LootList" value="cntNPCDPistol" />
 		</entity_class>
 		<entity_class name="EntityNPCLootContainerSMG" extends="EntityLootContainerNPC">
 			<property name="HideInSpawnMenu" value="true" />
-			<property name="LootListOnDeath" value="cntNPCSMG" />
+			<property name="LootList" value="cntNPCSMG" />
 		</entity_class>
 		<entity_class name="EntityNPCLootContainerM60" extends="EntityLootContainerNPC">
 			<property name="HideInSpawnMenu" value="true" />
-			<property name="LootListOnDeath" value="cntNPCM60" />
+			<property name="LootList" value="cntNPCM60" />
 		</entity_class>
 		<entity_class name="EntityNPCLootContainerAK47" extends="EntityLootContainerNPC">
 			<property name="HideInSpawnMenu" value="true" />
-			<property name="LootListOnDeath" value="cntNPCAK47" />
+			<property name="LootList" value="cntNPCAK47" />
 		</entity_class>
 		<entity_class name="EntityNPCLootContainerPipeMG" extends="EntityLootContainerNPC">
 			<property name="HideInSpawnMenu" value="true" />
-			<property name="LootListOnDeath" value="cntNPCPipeMG" />
+			<property name="LootList" value="cntNPCPipeMG" />
 		</entity_class>
 		<entity_class name="EntityNPCLootContainerTRifle" extends="EntityLootContainerNPC">
 			<property name="HideInSpawnMenu" value="true" />
-			<property name="LootListOnDeath" value="cntNPCTRifle" />
+			<property name="LootList" value="cntNPCTRifle" />
 		</entity_class>
 		<entity_class name="EntityNPCLootContainerPipeRifle" extends="EntityLootContainerNPC">
 			<property name="HideInSpawnMenu" value="true" />
-			<property name="LootListOnDeath" value="cntNPCPipeRifle" />
+			<property name="LootList" value="cntNPCPipeRifle" />
 		</entity_class>
 		<entity_class name="EntityNPCLootContainerHRifle" extends="EntityLootContainerNPC">
 			<property name="HideInSpawnMenu" value="true" />
-			<property name="LootListOnDeath" value="cntNPCHRifle" />
+			<property name="LootList" value="cntNPCHRifle" />
 		</entity_class>
 		<entity_class name="EntityNPCLootContainerSRifle" extends="EntityLootContainerNPC">
 			<property name="HideInSpawnMenu" value="true" />
-			<property name="LootListOnDeath" value="cntNPCSRifle" />
+			<property name="LootList" value="cntNPCSRifle" />
 		</entity_class>
 		<entity_class name="EntityNPCLootContainerPipeShotgun" extends="EntityLootContainerNPC">
 			<property name="HideInSpawnMenu" value="true" />
-			<property name="LootListOnDeath" value="cntNPCPipeShotgun" />
+			<property name="LootList" value="cntNPCPipeShotgun" />
 		</entity_class>
 		<entity_class name="EntityNPCLootContainerPShotgun" extends="EntityLootContainerNPC">
 			<property name="HideInSpawnMenu" value="true" />
-			<property name="LootListOnDeath" value="cntNPCPShotgun" />
+			<property name="LootList" value="cntNPCPShotgun" />
 		</entity_class>
 		<entity_class name="EntityNPCLootContainerAShotgun" extends="EntityLootContainerNPC">
 			<property name="HideInSpawnMenu" value="true" />
-			<property name="LootListOnDeath" value="cntNPCAShotgun" />
+			<property name="LootList" value="cntNPCAShotgun" />
 		</entity_class>
 		<entity_class name="EntityNPCLootContainerLBow" extends="EntityLootContainerNPC">
 			<property name="HideInSpawnMenu" value="true" />
-			<property name="LootListOnDeath" value="cntNPCLBow" />
+			<property name="LootList" value="cntNPCLBow" />
 		</entity_class>
 		<entity_class name="EntityNPCLootContainerXBow" extends="EntityLootContainerNPC">
 			<property name="HideInSpawnMenu" value="true" />
-			<property name="LootListOnDeath" value="cntNPCXBow" />
+			<property name="LootList" value="cntNPCXBow" />
 		</entity_class>
 		<entity_class name="EntityNPCLootContainerRocketL" extends="EntityLootContainerNPC">
 			<property name="HideInSpawnMenu" value="true" />
-			<property name="LootListOnDeath" value="cntNPCRocketL" />
+			<property name="LootList" value="cntNPCRocketL" />
 		</entity_class>
 		<entity_class name="EntityNPCLootContainerMech" extends="EntityLootContainerNPC">
 			<property name="HideInSpawnMenu" value="true" />
-			<property name="LootListOnDeath" value="cntNPCMech" />
+			<property name="LootList" value="cntNPCMech" />
 		</entity_class>
 		
 		<!--  NPC and Dumb animals  -->	
