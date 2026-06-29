@@ -4144,7 +4144,7 @@
 			<property name="PickUpItem" value="bakerPickUpNPC" />
 		</entity_class> 
 		
-		<!-- <entity_class name="npcJenKnife" extends="npcAdvancedKnifeTemplate"> 
+		<entity_class name="npcJenKnife" extends="npcAdvancedKnifeTemplate"> 
 			<property name="UserSpawnType" value="Menu"/> 
  			<property name="Tags" value="entity,female,npc,walker,melee,DRMid,Knife,Machete,ClubWood,BatWood,Axe,Spear,SMG,PipePistol,PipeShotgun,PipeRifle,PipeMG,M60,Pistol,DPistol,Ak47,TRifle,HRifle,SRifle,LBow,XBow,PShotgun,AShotgun,RocketL"/>
 			<property name="Faction" value="whiteriver"/>
@@ -4153,7 +4153,8 @@
 			<property name="PickUpItem" value="bakerPickUpNPC" />
 			<property name="CrouchType" value="0"/> 
 			<property name="LookAtAngle" value="0"/> 
-		</entity_class>	-->
+			<property name="personality" value="jen" />
+		</entity_class>	
 	
 		<!-- Loot drop containers  -->
 		
