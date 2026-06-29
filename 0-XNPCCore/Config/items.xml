@@ -993,7 +993,7 @@
 				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2" tags="perkGunslinger,9mmGun"/> <!-- random effective rng -->
 				<!--			<passive_effect name="EntityDamage" operation="base_add" value="3" tags="perkGunslinger"/> damage offset -->
 				<passive_effect name="RoundsPerMinute" operation="base_set" value="480" tags="perkGunslinger"/>
-				<passive_effect name="BurstRoundCount" operation="base_set" value="1" tags="perkGunslinger"/><!--  v3.0 critical change  -->
+				<passive_effect name="BurstRoundCount" operation="base_set" value="0" tags="perkGunslinger"/><!--  v3.0 critical change  -->
 				<!--		<passive_effect name="MagazineSize" operation="base_set" value="30" tags="perkGunslinger"/> We set this in template  -->
 				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1" />  <!-- 4s, but messes up reload timing -->
 				<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
@@ -1457,7 +1457,7 @@
 				<passive_effect name="WeaponHandling" operation="perc_add" value="-.08,.08" tags="perkMachineGunner"/> <!-- random WeaponHandling -->
 
 				<passive_effect name="RoundsPerMinute" operation="base_set" value="200" tags="perkMachineGunner"/>
-				<passive_effect name="BurstRoundCount" operation="base_set" value="1" tags="perkMachineGunner"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="0" tags="perkMachineGunner"/>
 				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1" tags="perkMachineGunner"/> <!--x.xs -->
 
 				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="10" tags="perkMachineGunner"/>
@@ -1578,7 +1578,7 @@
 				<passive_effect name="WeaponHandling" operation="perc_add" value="-.08,.08" tags="perkMachineGunner"/> <!-- random WeaponHandling -->
 
 				<passive_effect name="RoundsPerMinute" operation="base_set" value="440" tags="perkMachineGunner"/>
-				<passive_effect name="BurstRoundCount" operation="base_set" value="1" tags="perkMachineGunner"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="0" tags="perkMachineGunner"/>
 				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1" tags="perkMachineGunner"/>
 
 				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="5" tags="perkMachineGunner"/>
@@ -2067,7 +2067,7 @@
 				<passive_effect name="WeaponHandling" operation="perc_add" value="-.08,.08" tags="perkMachineGunner"/> <!-- random WeaponHandling -->
 
 				<passive_effect name="RoundsPerMinute" operation="base_set" value="360" tags="perkMachineGunner"/>
-				<passive_effect name="BurstRoundCount" operation="base_set" value="1" tags="perkMachineGunner"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="0" tags="perkMachineGunner"/>
 				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1" tags="perkMachineGunner"/> <!-- 2.85s -->
 
 				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="5" tags="perkMachineGunner"/>
@@ -2172,7 +2172,7 @@
 				<passive_effect name="WeaponHandling" operation="perc_add" value="-.08,.08" tags="perkMachineGunner"/> <!-- random WeaponHandling -->
 
 				<passive_effect name="RoundsPerMinute" operation="base_set" value="405" tags="perkMachineGunner"/>
-				<passive_effect name="BurstRoundCount" operation="base_set" value="1" tags="perkMachineGunner"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="0" tags="perkMachineGunner"/>
 				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value=".7" tags="perkMachineGunner"/> <!-- 3.8s -->
 
 				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="5" tags="perkMachineGunner"/>
@@ -2404,7 +2404,7 @@
 				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2" tags="perkDeadEye"/> <!-- random effective rng -->
 
 				<passive_effect name="RoundsPerMinute" operation="base_set" value="80" tags="perkDeadEye"/>
-				<passive_effect name="BurstRoundCount" operation="base_set" value="1" tags="perkDeadEye"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="0" tags="perkDeadEye"/>
 			
 				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1" tags="perkDeadEye"/> <!-- 2.7s -->
 				<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
@@ -2777,7 +2777,7 @@
 			</property>
 			<effect_group name="gunShotgunT2PumpShotgun">
 				<passive_effect name="RoundsPerMinute" operation="base_set" value="60" tags="perkBoomstick"/>
-				<passive_effect name="BurstRoundCount" operation="base_set" value="1" tags="perkBoomstick"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="0" tags="perkBoomstick"/>
 				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1" tags="perkBoomstick"/> <!-- 2.3s -->
 				<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
@@ -2898,7 +2898,7 @@
 			</property>
 			<effect_group name="gunShotgunT3AutoShotgun">
 				<passive_effect name="RoundsPerMinute" operation="base_set" value="70" tags="perkBoomstick"/>
-				<passive_effect name="BurstRoundCount" operation="base_set" value="1" tags="perkBoomstick"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="0" tags="perkBoomstick"/>
 
 				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1" tags="perkBoomstick"/> <!-- 2.3s -->
 				<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
