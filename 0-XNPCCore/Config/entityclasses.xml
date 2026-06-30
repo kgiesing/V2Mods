@@ -498,7 +498,7 @@
 			<property name="LootDropEntityClass" value="EntityNPCLootContainer" />
 							
 			<!--  Customization properties for default, passive, basic characters  -->
-			<property name="LootListAlive" value=""/> 
+			<property name="LootList" value=""/> 
 			<property name="NPCID" value=""/> 
 			<property name="NeverScaleAI" value="true" /> <!-- AI has a delay added when 8M away from a player, so dont do that sh*t on NPCs. -->
 			<property name="NoStorage" value="true" /> <!-- Cant put NPCs into containers -->
@@ -743,7 +743,7 @@
 			<property name="UserSpawnType" value="None"/>
 			<property name="Tags" value="entity,male,npc,walker,melee"/> 
 			<property name="Faction" value="whiteriver"/>
-			<property name="LootListAlive" value="traderNPC"/>
+			<property name="LootList" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Hirable" value="true" />
 		</entity_class>
@@ -752,7 +752,7 @@
 			<property name="UserSpawnType" value="None"/>
 			<property name="Tags" value="entity,male,npc,walker,ranged"/> 
 			<property name="Faction" value="whiteriver"/>
-			<property name="LootListAlive" value="traderNPC"/>
+			<property name="LootList" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Hirable" value="true" />
 		</entity_class>		
@@ -824,7 +824,7 @@
 			<property name="Tags" value="entity,male,npc,walker,melee"/> 
 			<property name="Names" value="Template" />	
 			<property name="Faction" value="whiteriver"/>
-			<property name="LootListAlive" value="traderNPC"/> 
+			<property name="LootList" value="traderNPC"/> 
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Hirable" value="true" />
 		</entity_class>
@@ -884,7 +884,7 @@
 			<property name="UserSpawnType" value="None"/>
 			<property name="Tags" value="entity,male,npc,walker,melee"/> 
 			<property name="Faction" value="whiteriver"/>
-			<property name="LootListAlive" value="traderNPC"/>
+			<property name="LootList" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Hirable" value="true" />
 		</entity_class>
@@ -940,7 +940,7 @@
 			<property name="UserSpawnType" value="None"/>
 			<property name="Tags" value="entity,male,npc,walker,melee"/> 
 			<property name="Faction" value="whiteriver"/>
-			<property name="LootListAlive" value="traderNPC"/>
+			<property name="LootList" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Hirable" value="true" />
 		</entity_class>
@@ -997,7 +997,7 @@
 			<property name="UserSpawnType" value="None"/>
 			<property name="Tags" value="entity,male,npc,walker,melee"/> 
 			<property name="Faction" value="whiteriver"/>
-			<property name="LootListAlive" value="traderNPC"/>
+			<property name="LootList" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Hirable" value="true" />
 		</entity_class>
@@ -1054,7 +1054,7 @@
 			<property name="UserSpawnType" value="None"/>
 			<property name="Tags" value="entity,male,npc,walker,melee"/> 
 			<property name="Faction" value="whiteriver"/>
-			<property name="LootListAlive" value="traderNPC"/>
+			<property name="LootList" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Hirable" value="true" />
 		</entity_class>
@@ -1108,7 +1108,7 @@
 			<property name="UserSpawnType" value="None"/>
 			<property name="Tags" value="entity,male,npc,walker,melee"/> 
 			<property name="Faction" value="whiteriver"/>
-			<property name="LootListAlive" value="traderNPC"/>
+			<property name="LootList" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Hirable" value="true" />
 		</entity_class>
@@ -1162,7 +1162,7 @@
 			<property name="UserSpawnType" value="None"/>
 			<property name="Tags" value="entity,male,npc,walker,melee"/> 
 			<property name="Faction" value="whiteriver"/>
-			<property name="LootListAlive" value="traderNPC"/>
+			<property name="LootList" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Hirable" value="true" />
 		</entity_class>
@@ -1218,7 +1218,7 @@
 			<property name="UserSpawnType" value="None"/>
 			<property name="Tags" value="entity,male,npc,walker,ranged"/> 
 			<property name="Faction" value="whiteriver"/>
-			<property name="LootListAlive" value="traderNPC"/>
+			<property name="LootList" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Hirable" value="true" />
 		</entity_class>
@@ -1261,7 +1261,7 @@
 			<property name="UserSpawnType" value="None"/>
 			<property name="Tags" value="entity,male,npc,walker,ranged"/> 
 			<property name="Faction" value="whiteriver"/>
-			<property name="LootListAlive" value="traderNPC"/>
+			<property name="LootList" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Hirable" value="true" />
 		</entity_class>
@@ -1305,7 +1305,7 @@
 			<property name="UserSpawnType" value="None"/>
 			<property name="Tags" value="entity,male,npc,walker,ranged"/> 
 			<property name="Faction" value="whiteriver"/>
-			<property name="LootListAlive" value="traderNPC"/>
+			<property name="LootList" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Hirable" value="true" />
 		</entity_class>
@@ -1350,7 +1350,7 @@
 			<property name="UserSpawnType" value="None"/>
 			<property name="Tags" value="entity,male,npc,walker,ranged"/> 
 			<property name="Faction" value="whiteriver"/>
-			<property name="LootListAlive" value="traderNPC"/>
+			<property name="LootList" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Hirable" value="true" />
 		</entity_class>		
@@ -1395,7 +1395,7 @@
 			<property name="UserSpawnType" value="None"/>
 			<property name="Tags" value="entity,male,npc,walker,ranged"/> 
 			<property name="Faction" value="whiteriver"/>
-			<property name="LootListAlive" value="traderNPC"/>
+			<property name="LootList" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Hirable" value="true" />
 		</entity_class>		
@@ -1438,7 +1438,7 @@
 			<property name="UserSpawnType" value="None"/>
 			<property name="Tags" value="entity,male,npc,walker,ranged"/> 
 			<property name="Faction" value="whiteriver"/>
-			<property name="LootListAlive" value="traderNPC"/>
+			<property name="LootList" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Hirable" value="true" />
 		</entity_class>		
@@ -1481,7 +1481,7 @@
 			<property name="UserSpawnType" value="None"/>
 			<property name="Tags" value="entity,male,npc,walker,ranged"/> 
 			<property name="Faction" value="whiteriver"/>
-			<property name="LootListAlive" value="traderNPC"/>
+			<property name="LootList" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Hirable" value="true" />
 		</entity_class>		
@@ -1525,7 +1525,7 @@
 			<property name="UserSpawnType" value="None"/>
 			<property name="Tags" value="entity,male,npc,walker,ranged"/> 
 			<property name="Faction" value="whiteriver"/>
-			<property name="LootListAlive" value="traderNPC"/>
+			<property name="LootList" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Hirable" value="true" />
 		</entity_class>		
@@ -1569,7 +1569,7 @@
 			<property name="UserSpawnType" value="None"/>
 			<property name="Tags" value="entity,male,npc,walker,ranged"/> 
 			<property name="Faction" value="whiteriver"/>
-			<property name="LootListAlive" value="traderNPC"/>
+			<property name="LootList" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Hirable" value="true" />
 		</entity_class>		
@@ -1612,7 +1612,7 @@
 			<property name="UserSpawnType" value="None"/>
 			<property name="Tags" value="entity,male,npc,walker,ranged"/> 
 			<property name="Faction" value="whiteriver"/>
-			<property name="LootListAlive" value="traderNPC"/>
+			<property name="LootList" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Hirable" value="true" />
 		</entity_class>  		
@@ -1655,7 +1655,7 @@
 			<property name="UserSpawnType" value="None"/>
 			<property name="Tags" value="entity,male,npc,walker,ranged"/> 
 			<property name="Faction" value="whiteriver"/>
-			<property name="LootListAlive" value="traderNPC"/>
+			<property name="LootList" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Hirable" value="true" />
 		</entity_class>		
@@ -1698,7 +1698,7 @@
 			<property name="UserSpawnType" value="None"/>
 			<property name="Tags" value="entity,male,npc,walker,ranged"/> 
 			<property name="Faction" value="whiteriver"/>
-			<property name="LootListAlive" value="traderNPC"/>
+			<property name="LootList" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Hirable" value="true" />
 		</entity_class> 		
@@ -1741,7 +1741,7 @@
 			<property name="UserSpawnType" value="None"/>
 			<property name="Tags" value="entity,male,npc,walker,ranged"/> 
 			<property name="Faction" value="whiteriver"/>
-			<property name="LootListAlive" value="traderNPC"/>
+			<property name="LootList" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Hirable" value="true" />
 		</entity_class>		
@@ -1784,7 +1784,7 @@
 			<property name="UserSpawnType" value="None"/>
 			<property name="Tags" value="entity,male,npc,walker,ranged"/> 
 			<property name="Faction" value="whiteriver"/>
-			<property name="LootListAlive" value="traderNPC"/>
+			<property name="LootList" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Hirable" value="true" />
 		</entity_class>		
@@ -1827,7 +1827,7 @@
 			<property name="UserSpawnType" value="None"/>
 			<property name="Tags" value="entity,male,npc,walker,ranged"/> 
 			<property name="Faction" value="whiteriver"/>
-			<property name="LootListAlive" value="traderNPC"/>
+			<property name="LootList" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Hirable" value="true" />
 		</entity_class>		
@@ -1876,7 +1876,7 @@
 			<property name="UserSpawnType" value="None"/>
 			<property name="Tags" value="entity,male,npc,walker,ranged"/> 
 			<property name="Faction" value="whiteriver"/>
-			<property name="LootListAlive" value="traderNPC"/>
+			<property name="LootList" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Hirable" value="true" />
 		</entity_class>		
@@ -1921,7 +1921,7 @@
 			<property name="UserSpawnType" value="None"/>
 			<property name="Tags" value="entity,male,npc,walker,ranged"/> 
 			<property name="Faction" value="whiteriver"/>
-			<property name="LootListAlive" value="traderNPC"/>
+			<property name="LootList" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Hirable" value="true" />
 		</entity_class>		
@@ -1950,7 +1950,7 @@
             <property name="DeadBodyHitPoints" value="200"/>
             <property name="Mass" value="120"/>
             <property name="Weight" value="80"/>            
-            <property name="LootListAlive" value="traderNPC"/>
+            <property name="LootList" value="traderNPC"/>
             <property name="HandItem" value="meleeHandAnimalCoyote"/>
             <property name="SoundRandom" value="wolfroam"/>
             <property name="SoundAlert" value="wolfalert"/>
@@ -2559,7 +2559,7 @@
 			<drop event="Harvest" name="resourceElectricParts" tag="salvageHarvest" count="12"/> 
 			<drop event="Harvest" name="resourceScrapPolymers" tag="salvageHarvest" count="9"/>
 			<property name="Immunity" value="sickness;disease;wellness"/>
-			<property name="LootListAlive" value="roboticDrone"/> 
+			<property name="LootList" value="roboticDrone"/> 
 			<property name="TimeStayAfterDeath" value="300"/>
 			<property name="DeadBodyHitPoints" value="800"/>
 			<effect_group name="Base Effects">
