@@ -163,7 +163,9 @@
 				<property name="Class" value="Projectile"/>
 				<property name="DamageEntity" value="15"/>
 				<property name="DamageBlock" value="20"/>
-				<property name="Explosion.ParticleIndex" value="7"/>
+				<property class="Explosion">
+					<property name="ParticleIndex" value="7"/>
+				</property>
 				<property name="Velocity" value="13"/>
 				<property name="FlyTime" value="6"/>
 				<property name="LifeTime" value="8"/>
