@@ -216,12 +216,12 @@
 			
 	</append>
 	
-	<!-- Add the Control button to player toolbelt on entering game -->
-	<set xpath="//entity_class[@name='playerMale']/property[@class='ItemsOnEnterGame']/property[@name='GameModeSurvival']/@value">drinkJarBoiledWater=2,foodCanChili,medicalFirstAidBandage,meleeToolTorch,noteDuke01,itemNPCModMode,itemNPCModStop</set>
-	<set xpath="//entity_class[@name='playerMale']/property[@class='ItemsOnEnterGame']/property[@name='GameModeSurvivalSP']/@value">drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,meleeToolTorch,itemNPCModMode,itemNPCModStop</set>
-	<set xpath="//entity_class[@name='playerMale']/property[@class='ItemsOnEnterGame']/property[@name='GameModeSurvivalMP']/@value">drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,meleeToolTorch,itemNPCModMode,itemNPCModStop</set> 
+			<!-- Add the Control button to player toolbelt on entering game 
+			<set xpath="//entity_class[@name='playerMale']/property[@class='ItemsOnEnterGame']/property[@name='GameModeSurvival']/@value">drinkJarBoiledWater=2,foodCanChili,medicalFirstAidBandage,meleeToolTorch,noteDuke01,itemNPCModMode,itemNPCModStop</set>
+			<set xpath="//entity_class[@name='playerMale']/property[@class='ItemsOnEnterGame']/property[@name='GameModeSurvivalSP']/@value">drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,meleeToolTorch,itemNPCModMode,itemNPCModStop</set>
+			<set xpath="//entity_class[@name='playerMale']/property[@class='ItemsOnEnterGame']/property[@name='GameModeSurvivalMP']/@value">drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage,meleeToolTorch,itemNPCModMode,itemNPCModStop</set> -->
 
-	<append xpath="/entity_classes">
+			<append xpath="/entity_classes"> 
 	
 			<entity_class name="zombieRegularTemplate"> <!-- This is for custom zombies -->
 			<property name="Class" value="EntityZombie"/>
@@ -782,14 +782,10 @@
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?NurseNancy_X"/> 
 			<property name="HandItem" value="meleeNPCEmptyHand"/> 
 			<property class="ItemsOnEnterGame">
- 
-			    <property name="GameModeSurvival" value="meleeNPCEmptyHand"/>
- 
-			    <property name="GameModeSurvivalSP" value="meleeNPCEmptyHand"/>
- 
-			    <property name="GameModeSurvivalMP" value="meleeNPCEmptyHand"/>
- 
-			</property> 
+ 			    <property name="GameModeSurvival" value="meleeNPCEmptyHand"/>
+ 			    <property name="GameModeSurvivalSP" value="meleeNPCEmptyHand"/>
+ 			    <property name="GameModeSurvivalMP" value="meleeNPCEmptyHand"/>
+ 			</property> 
 			<property name="HireCurrency" value="casinoCoin" />
 			<property name="HireCost" value="750" />
 			<property name="ExperienceGain" value="600"/> 
@@ -840,13 +836,9 @@
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?NurseNancy_X"/> 
 			<property name="RightHandJointName" value="Club" />
 			<property class="ItemsOnEnterGame">
-
 			    <property name="GameModeSurvival" value="meleeNPCClubWood"/>
-
 			    <property name="GameModeSurvivalSP" value="meleeNPCClubWood"/>
-
 			    <property name="GameModeSurvivalMP" value="meleeNPCClubWood"/>
-
 			</property> 
 			<property name="BagItems" value="meleeWpnClubT0WoodenClub" />
 			<property name="HireCurrency" value="casinoCoin" />
@@ -900,13 +892,9 @@
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?NurseNancy_X"/> 
 			<property name="RightHandJointName" value="Knife" />
 			<property class="ItemsOnEnterGame">
-
 			    <property name="GameModeSurvival" value="meleeNPCKnife"/>
-
 			    <property name="GameModeSurvivalSP" value="meleeNPCKnife"/>
-
 			    <property name="GameModeSurvivalMP" value="meleeNPCKnife"/>
-
 			</property> 
 			<property name="BagItems" value="meleeWpnBladeT1HuntingKnife" />
 			<property name="HireCurrency" value="casinoCoin" />
@@ -954,13 +942,9 @@
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?NurseNancy_X"/> 
 			<property name="RightHandJointName" value="Bat" />
 			<property class="ItemsOnEnterGame">
-
 			    <property name="GameModeSurvival" value="meleeNPCBatWood"/>
-
 			    <property name="GameModeSurvivalSP" value="meleeNPCBatWood"/>
-
 			    <property name="GameModeSurvivalMP" value="meleeNPCBatWood"/>
-
 			</property>
 			<property name="BagItems" value="meleeWpnClubT1BaseballBat" />
 			<property name="HireCurrency" value="casinoCoin" />
@@ -1013,13 +997,9 @@
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?NurseNancy_X"/> 
 			<property name="RightHandJointName" value="Axe" />
 			<property class="ItemsOnEnterGame">
-
 			    <property name="GameModeSurvival" value="meleeNPCAxe"/>
-
 			    <property name="GameModeSurvivalSP" value="meleeNPCAxe"/>
-
 			    <property name="GameModeSurvivalMP" value="meleeNPCAxe"/>
-
 			</property>
 			<property name="BagItems" value="meleeToolAxeT1IronFireaxe" />
 			<property name="HireCurrency" value="casinoCoin" />
@@ -1068,13 +1048,9 @@
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?NurseNancy_X"/> 
 			<property name="RightHandJointName" value="Spear" />
 			<property class="ItemsOnEnterGame">
-
 			    <property name="GameModeSurvival" value="meleeNPCSpear"/>
-
 			    <property name="GameModeSurvivalSP" value="meleeNPCSpear"/>
-
 			    <property name="GameModeSurvivalMP" value="meleeNPCSpear"/>
-
 			</property> 
 			<property name="BagItems" value="meleeWpnSpearT1IronSpear" />
 			<property name="HireCurrency" value="casinoCoin" />
@@ -1122,13 +1098,9 @@
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?NurseNancy_X"/> 
 			<property name="RightHandJointName" value="Machete" />
 			<property class="ItemsOnEnterGame">
-
 			    <property name="GameModeSurvival" value="meleeNPCMachete"/>
-
 			    <property name="GameModeSurvivalSP" value="meleeNPCMachete"/>
-
 			    <property name="GameModeSurvivalMP" value="meleeNPCMachete"/>
-
 			</property> 
 			<property name="BagItems" value="meleeWpnBladeT3Machete" />
 			<property name="HireCurrency" value="casinoCoin" />
@@ -1176,13 +1148,9 @@
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?NurseNancy_X"/> 
 			<property name="RightHandJointName" value="PipePistol" />
 			<property class="ItemsOnEnterGame">
-
 			    <property name="GameModeSurvival" value="gunNPCPipePistol,ammoNPC9mmBulletBall"/>
-
 			    <property name="GameModeSurvivalSP" value="gunNPCPipePistol,ammoNPC9mmBulletBall"/>
-
 			    <property name="GameModeSurvivalMP" value="gunNPCPipePistol,ammoNPC9mmBulletBall"/>
-
 			</property>
 			<property name="BagItems" value="gunHandgunT0PipePistol" />
 			<property name="HireCurrency" value="casinoCoin" />
@@ -1232,13 +1200,9 @@
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?NurseNancy_X"/> 
 			<property name="RightHandJointName" value="Pistol" />
 			<property class="ItemsOnEnterGame">
-
 			    <property name="GameModeSurvival" value="gunNPCPistol,ammoNPC9mmBulletBall"/>
-
 			    <property name="GameModeSurvivalSP" value="gunNPCPistol,ammoNPC9mmBulletBall"/>
-
 			    <property name="GameModeSurvivalMP" value="gunNPCPistol,ammoNPC9mmBulletBall"/>
-
 			</property>
 			<property name="BagItems" value="gunHandgunT1Pistol" />
 			<property name="HireCurrency" value="casinoCoin" />
@@ -1276,13 +1240,9 @@
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?NurseNancy_X"/> 
 			<property name="RightHandJointName" value="DPistol" />
 			<property class="ItemsOnEnterGame">
-
 			    <property name="GameModeSurvival" value="gunNPCDPistol,ammoNPC9mmBulletBall"/>
-
 			    <property name="GameModeSurvivalSP" value="gunNPCDPistol,ammoNPC9mmBulletBall"/>
-
 			    <property name="GameModeSurvivalMP" value="gunNPCDPistol,ammoNPC9mmBulletBall"/>
-
 			</property>
 			<property name="BagItems" value="gunHandgunT3DesertVulture" />
 			<property name="HireCurrency" value="casinoCoin" />
@@ -1321,13 +1281,9 @@
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?NurseNancy_X"/> 
 			<property name="RightHandJointName" value="SMG" />
 			<property class="ItemsOnEnterGame">
-
 			    <property name="GameModeSurvival" value="gunNPCSMG5,ammoNPC9mmBulletBall"/>
-
 			    <property name="GameModeSurvivalSP" value="gunNPCSMG5,ammoNPC9mmBulletBall"/>
-
 			    <property name="GameModeSurvivalMP" value="gunNPCSMG5,ammoNPC9mmBulletBall"/>
-
 			</property> 
 			<property name="BagItems" value="gunHandgunT3SMG5" />
 			<property name="HireCurrency" value="casinoCoin" />
@@ -1354,9 +1310,7 @@
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Hirable" value="true" />
 		</entity_class>		
-		
-		
-		
+	
 		<entity_class name="npcM60Template" extends="npcRangedTemplate"> 
  			<property name="UserSpawnType" value="None"/> 
 			<property name="Tags" value="entity,male,npc,walker,ranged"/>
@@ -1366,13 +1320,9 @@
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?NurseNancy_X"/> 
 			<property name="RightHandJointName" value="M60" />
 			<property class="ItemsOnEnterGame">
-
 			    <property name="GameModeSurvival" value="gunNPCM60,ammoNPC762mmBulletBall"/>
-
 			    <property name="GameModeSurvivalSP" value="gunNPCM60,ammoNPC762mmBulletBall"/>
-
 			    <property name="GameModeSurvivalMP" value="gunNPCM60,ammoNPC762mmBulletBall"/>
-
 			</property> 
 			<property name="BagItems" value="gunMGT3M60" />
 			<property name="HireCurrency" value="casinoCoin" />
@@ -1409,13 +1359,9 @@
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?NurseNancy_X"/> 
 			<property name="RightHandJointName" value="AK47" />
 			<property class="ItemsOnEnterGame">
-
 			    <property name="GameModeSurvival" value="gunNPCAk47,ammoNPC762mmBulletBall"/>
-
 			    <property name="GameModeSurvivalSP" value="gunNPCAk47,ammoNPC762mmBulletBall"/>
-
 			    <property name="GameModeSurvivalMP" value="gunNPCAk47,ammoNPC762mmBulletBall"/>
-
 			</property> 
 			<property name="BagItems" value="gunMGT1AK47" />
 			<property name="HireCurrency" value="casinoCoin" />
@@ -1452,13 +1398,9 @@
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?NurseNancy_X"/> 
 			<property name="RightHandJointName" value="PipeMG" />
 			<property class="ItemsOnEnterGame">
-
 			    <property name="GameModeSurvival" value="gunNPCPipeMG,ammoNPC762mmBulletBall"/>
-
 			    <property name="GameModeSurvivalSP" value="gunNPCPipeMG,ammoNPC762mmBulletBall"/>
-
 			    <property name="GameModeSurvivalMP" value="gunNPCPipeMG,ammoNPC762mmBulletBall"/>
-
 			</property> 
 			<property name="BagItems" value="gunMGT0PipeMachineGun" />
 			<property name="HireCurrency" value="casinoCoin" />
@@ -1496,13 +1438,9 @@
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?NurseNancy_X"/> 
 			<property name="RightHandJointName" value="TRifle" />
 			<property class="ItemsOnEnterGame">
-
 			    <property name="GameModeSurvival" value="gunNPCTRifle,ammoNPC762mmBulletBall"/>
-
 			    <property name="GameModeSurvivalSP" value="gunNPCTRifle,ammoNPC762mmBulletBall"/>
-
 			    <property name="GameModeSurvivalMP" value="gunNPCTRifle,ammoNPC762mmBulletBall"/>
-
 			</property> 
 			<property name="BagItems" value="gunMGT2TacticalAR" />
 			<property name="HireCurrency" value="casinoCoin" />
@@ -1540,13 +1478,9 @@
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?NurseNancy_X"/> 	
 			<property name="RightHandJointName" value="PipeRifle" />
   			<property class="ItemsOnEnterGame">
-
   			    <property name="GameModeSurvival" value="gunNPCPipeRifle,ammoNPC762mmBulletBall"/>
-
   			    <property name="GameModeSurvivalSP" value="gunNPCPipeRifle,ammoNPC762mmBulletBall"/>
-
   			    <property name="GameModeSurvivalMP" value="gunNPCPipeRifle,ammoNPC762mmBulletBall"/>
-
   			</property> 
 			<property name="BagItems" value="gunRifleT0PipeRifle" />
 			<property name="HireCurrency" value="casinoCoin" />
@@ -1583,13 +1517,9 @@
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?NurseNancy_X"/>
  			<property name="RightHandJointName" value="HRifle" />
   			<property class="ItemsOnEnterGame">
-
   			    <property name="GameModeSurvival" value="gunNPCHRifle,ammoNPC762mmBulletBall"/>
-
   			    <property name="GameModeSurvivalSP" value="gunNPCHRifle,ammoNPC762mmBulletBall"/>
-
   			    <property name="GameModeSurvivalMP" value="gunNPCHRifle,ammoNPC762mmBulletBall"/>
-
   			</property> 
 			<property name="BagItems" value="gunRifleT1HuntingRifle" />
 			<property name="HireCurrency" value="casinoCoin" />
@@ -1626,13 +1556,9 @@
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?NurseNancy_X"/> 	
 			<property name="RightHandJointName" value="SRifle" />
   			<property class="ItemsOnEnterGame">
-
   			    <property name="GameModeSurvival" value="gunNPCSRifle,ammoNPC762mmBulletBall"/>
-
   			    <property name="GameModeSurvivalSP" value="gunNPCSRifle,ammoNPC762mmBulletBall"/>
-
   			    <property name="GameModeSurvivalMP" value="gunNPCSRifle,ammoNPC762mmBulletBall"/>
-
   			</property> 
 			<property name="BagItems" value="gunRifleT3SniperRifle" />
 			<property name="HireCurrency" value="casinoCoin" />
@@ -1669,13 +1595,9 @@
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?NurseNancy_X"/> 
 			<property name="RightHandJointName" value="PipeSG" />
 			<property class="ItemsOnEnterGame">
-
 			    <property name="GameModeSurvival" value="gunNPCPipeShotgun,ammoNPCShotgunShell"/>
-
 			    <property name="GameModeSurvivalSP" value="gunNPCPipeShotgun,ammoNPCShotgunShell"/>
-
 			    <property name="GameModeSurvivalMP" value="gunNPCPipeShotgun,ammoNPCShotgunShell"/>
-
 			</property> 
 			<property name="BagItems" value="gunShotgunT0PipeShotgun" />
 			<property name="HireCurrency" value="casinoCoin" />
@@ -1712,13 +1634,9 @@
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?NurseNancy_X"/> 
 			<property name="RightHandJointName" value="PShotgun" />
 			<property class="ItemsOnEnterGame">
-
 			    <property name="GameModeSurvival" value="gunNPCPShotgun,ammoNPCShotgunShell"/>
-
 			    <property name="GameModeSurvivalSP" value="gunNPCPShotgun,ammoNPCShotgunShell"/>
-
 			    <property name="GameModeSurvivalMP" value="gunNPCPShotgun,ammoNPCShotgunShell"/>
-
 			</property> 
 			<property name="BagItems" value="gunShotgunT2PumpShotgun" />
 			<property name="HireCurrency" value="casinoCoin" />
@@ -1755,13 +1673,9 @@
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?NurseNancy_X"/>
  			<property name="RightHandJointName" value="AShotgun" />
 			<property class="ItemsOnEnterGame">
-
 			    <property name="GameModeSurvival" value="gunNPCAShotgun,ammoNPCShotgunShell"/>
-
 			    <property name="GameModeSurvivalSP" value="gunNPCAShotgun,ammoNPCShotgunShell"/>
-
 			    <property name="GameModeSurvivalMP" value="gunNPCAShotgun,ammoNPCShotgunShell"/>
-
 			</property> 
 			<property name="BagItems" value="gunShotgunT3AutoShotgun" />
 			<property name="HireCurrency" value="casinoCoin" />
@@ -1798,13 +1712,9 @@
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?NurseNancy_X"/> 			
 			<property name="RightHandJointName" value="LBow" />  <!--  LongBows go in LeftHand as the anims are lefthanded -->
 			<property class="ItemsOnEnterGame">
-
 			    <property name="GameModeSurvival" value="gunNPCLBow,ammoNPCArrowIron"/>
-
 			    <property name="GameModeSurvivalSP" value="gunNPCLBow,ammoNPCArrowIron"/>
-
 			    <property name="GameModeSurvivalMP" value="gunNPCLBow,ammoNPCArrowIron"/>
-
 			</property> 
 			<property name="BagItems" value="gunBowT1WoodenBow" />
 			<property name="HireCurrency" value="casinoCoin" />
@@ -1841,13 +1751,9 @@
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?NurseNancy_X"/> 
 			<property name="RightHandJointName" value="XBow" />
 			<property class="ItemsOnEnterGame">
-
 			    <property name="GameModeSurvival" value="gunNPCXBow,ammoNPCCrossbowBoltIron"/>
-
 			    <property name="GameModeSurvivalSP" value="gunNPCXBow,ammoNPCCrossbowBoltIron"/>
-
 			    <property name="GameModeSurvivalMP" value="gunNPCXBow,ammoNPCCrossbowBoltIron"/>
-
 			</property> 
 			<property name="BagItems" value="gunBowT1IronCrossbow" />
 			<property name="HireCurrency" value="casinoCoin" />
@@ -1892,13 +1798,9 @@
 			<property name="AttackTimeoutDay" value="0.25"/>  <!-- 0.05 * 20f = 1 seconds between attack -->
             <property name="AttackTimeoutNight" value="0.25"/>
 			<property class="ItemsOnEnterGame">
-
 			    <property name="GameModeSurvival" value="gunNPCRocketLauncher,ammoNPCRocketHE"/>
-
 			    <property name="GameModeSurvivalSP" value="gunNPCRocketLauncher,ammoNPCRocketHE"/>
-
 			    <property name="GameModeSurvivalMP" value="gunNPCRocketLauncher,ammoNPCRocketHE"/>
-
 			</property> 
 			<property name="BagItems" value="gunExplosivesT3RocketLauncher" />
 			<property name="HireCurrency" value="casinoCoin" />

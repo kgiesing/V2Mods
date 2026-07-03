@@ -151,11 +151,14 @@
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="60" />
 				<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffInjuryBleeding,buffInjuryBleedingZombie,buffInfectionCatch"/>
 			</effect_group>
-			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunNPCPistolHidden,ammoNPC9mmBulletBall"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunNPCPistolHidden,ammoNPC9mmBulletBall"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunNPCPistolHidden,ammoNPC9mmBulletBall"/> 	
+			<property class="ItemsOnEnterGame">
+			    <property name="GameModeSurvival" value="gunNPCPistolHidden,ammoNPC9mmBulletBall"/> <!-- example for extra items on spawn  -->
+			    <property name="GameModeSurvivalSP" value="gunNPCPistolHidden,ammoNPC9mmBulletBall"/>
+			    <property name="GameModeSurvivalMP" value="gunNPCPistolHidden,ammoNPC9mmBulletBall"/>
+			</property>
 			<property name="AIPackages" value="NPCModMechCoreNoChat, NPCModHostileMeleeBasic, NPCModHostileRangedBasic"/>
-		</entity_class>		
+		</entity_class>	
+		
 		<entity_class name="npcMechSphereI" extends="npcMechMeleeTemplate" >
 			<property name="UserSpawnType" value="Menu"/>		
 			<property name="Mesh" value="#@modfolder:Resources/XythMechs.unity3d?SphereI_X" />	<!-- Free CC model by 3DHaupt -->
@@ -272,9 +275,11 @@
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="60" />
 				<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffInjuryBleeding,buffInjuryBleedingZombie,buffInfectionCatch"/>
 			</effect_group>
-			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunNPCPistolHidden,ammoNPC9mmBulletBall"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunNPCPistolHidden,ammoNPC9mmBulletBall"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunNPCPistolHidden,ammoNPC9mmBulletBall"/> 	
+			<property class="ItemsOnEnterGame">
+			    <property name="GameModeSurvival" value="gunNPCPistolHidden,ammoNPC9mmBulletBall"/> <!-- example for extra items on spawn  -->
+			    <property name="GameModeSurvivalSP" value="gunNPCPistolHidden,ammoNPC9mmBulletBall"/>
+			    <property name="GameModeSurvivalMP" value="gunNPCPistolHidden,ammoNPC9mmBulletBall"/>
+			</property>
 			<property name="AIPackages" value="NPCModMechCoreNoChat, NPCModHostileMeleeBasic, NPCModHostileRangedBasic"/>
 		</entity_class>	
 		
@@ -348,9 +353,11 @@
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="60" />
 				<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffInjuryBleeding,buffInjuryBleedingZombie,buffInfectionCatch"/>
 			</effect_group>
-			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunNPCPistolHiddenFlying,ammoNPC9mmBulletBall"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunNPCPistolHiddenFlying,ammoNPC9mmBulletBall"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunNPCPistolHiddenFlying,ammoNPC9mmBulletBall"/> 
+				<property class="ItemsOnEnterGame">
+			    <property name="GameModeSurvival" value="gunNPCPistolHiddenFlying,ammoNPC9mmBulletBall"/> <!-- example for extra items on spawn  -->
+			    <property name="GameModeSurvivalSP" value="gunNPCPistolHiddenFlying,ammoNPC9mmBulletBall"/>
+			    <property name="GameModeSurvivalMP" value="gunNPCPistolHiddenFlying,ammoNPC9mmBulletBall"/>
+			</property>
 		</entity_class>	
 	</append>
 	
